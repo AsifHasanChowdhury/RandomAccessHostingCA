@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
 *{
     margin:0;
     padding:0;
@@ -176,14 +176,12 @@ a{
     transform: rotateZ(45deg) translateY(240%);
     background: rgb(0, 0, 0);
 }
-
 .toggle .line2{
     opacity: 0;
 }
 .toggle .line3{
     transform: rotateZ(-45deg) translateY(-220%);
     background: rgb(0, 0, 0);
-
 } */
 /*Hero Section */
 
@@ -304,7 +302,7 @@ a{
     background-color:transparent;
     width: 100%;
     z-index: 10;
-
+    
 }
 
 
@@ -353,7 +351,7 @@ a{
     padding-left: 4%;
     padding-top: 2%;
     color:rgb(5, 5, 16);
-    font-size:170%;
+    font-size:190%;
     text-align: left;
     font-weight:800;
     
@@ -381,7 +379,8 @@ a{
 }
 .stack-top1{
     /* margin-top: max(-400px,100%);  */
-    margin-top:min(145px,55%);
+    margin-top:min(145px,55%); 
+    /* margin-top:8%; */
     z-index: 6;
 }
 
@@ -576,27 +575,26 @@ footer ul{
     }
 
     .stack-top1{
-        margin-top: 20px;
+        margin-top: 100px;
     }
     .general-info{
         margin-top: 380px;
     }
   
     
-    /* .container{
-        min-height:50vh;
-       
-    }
+    /* 
     .container .box{
         display: flex;
         flex-direction:column;
-
+    }
+    .container{
+        min-height:50vh;
+       
     }
     .container .box .card{
         width:45rem;
         min-height:250px;
     }
-
      .general-info{
         display: flex;
         flex-direction:row;
@@ -612,13 +610,78 @@ footer ul{
         padding-top: 3.5rem;
         padding-bottom: 1.5rem;
     } 
-
     .bottom-card{
         display: flex;
         flex-direction: column;
     } */
     
 }  
+
+@media screen and (max-width:760px){
+    .sticky-ul{
+        display: none;
+    }
+
+    .burger{
+        position:relative;
+        display:inline-block;
+        z-index: 40;
+        cursor: pointer;
+    }
+    
+    .burger span{
+        width: 30px;
+        height: 3.6px;
+        padding:2px;
+        margin: 2px;
+        color: black;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        min-height:130vh;
+       
+    }
+    .hero{
+        padding-left: 6rem;
+    }
+    .hero h3{
+        font-weight: light;
+
+    }
+
+    .stack-top1{
+        margin-top: 45rem;
+    }
+
+
+
+    .general-info{
+        margin-top: 380px;
+    }
+  
+    
+    
+    .container .box{
+        display: flex;
+        flex-direction:column;
+
+    }
+   
+    .container .box .card{
+        width:45rem;
+        min-height:250px;
+    }
+
+    .bottom-card{
+        display: grid;
+        grid-template-columns: 75%;
+        margin: 0;
+       
+    }
+}
 
 /*ipad / ipad mini responsive */
 
@@ -634,9 +697,7 @@ footer ul{
     .container .box{
         display: flex;
         flex-direction:column;
-
     }
-
     .container .box .card{
         min-width:20px;
         max-height:25px;
@@ -647,7 +708,6 @@ footer ul{
     .stack-top1{
         margin-top: 40rem;
     }
-
     .general-info{
         display: flex;
         flex-direction:row;
@@ -655,18 +715,15 @@ footer ul{
         min-height: 40vh;
         
     }
-
     .general-info .colright{
         justify-content:flex-end;
         padding-top: 3.5rem;
         padding-bottom: 1.5rem;
     }
-
     .bottom-card{
         display: grid;
        
     }
-
 }   
  */
 /*mobile */
@@ -681,12 +738,15 @@ footer ul{
     padding-top: 10rem;
     
    }
-  
+  .container{
+    min-height: 142vh;
+  }
 
     .box{
         display: flex;
         flex-direction: column;
         height: 90vh;
+       
         
        
     }
@@ -696,15 +756,15 @@ footer ul{
     }
    
     .stack-top1{
-        /* margin-top: 330px; */
+        margin-top: 90px; 
         z-index: 6;
     }
     .general-info{
         display: flex;
         flex-direction:column;
         padding-right: 3.5rem;
-        height: 100vh;
-        margin-top: 100rem;
+        height: 95vh;
+        margin-top: 50rem;
         
         
     }
@@ -727,7 +787,7 @@ footer ul{
         display: grid;
         grid-template-columns: 90%;
         padding-left: 0px;
-        margin-left: 0px;
+        margin-left: -25px;
         
     }
 
@@ -790,7 +850,7 @@ footer ul{
         flex-direction:column;
         padding: 0rem;
         height: 107vh;
-        margin-top: 60rem;
+        margin-top: 15rem;
         margin-left: -1.3rem;
     }
   
@@ -810,7 +870,13 @@ footer ul{
 
     .bottom-card{
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 95%;
+        margin-left: -20px;
+       
+    }
+    
+    .bottom-card .card .details p{
+        color:black;
     }
 
     
